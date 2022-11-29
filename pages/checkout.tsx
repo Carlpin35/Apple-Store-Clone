@@ -21,7 +21,7 @@ export default function Checkout() {
 	const [loading, setLoading] = useState(false);
 
 	  useEffect(() => {
-    const groupedItems = items.reduce((results, item) => {
+    const groupedItems = items.reduce((results: number, item) => {
       (results[item._id] = results[item._id] || []).push(item);
       return results;
     }, {} as { [key: string]: Product[] });
