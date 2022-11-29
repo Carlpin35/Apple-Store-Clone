@@ -20,14 +20,14 @@ export default function Checkout() {
 	);
 	const [loading, setLoading] = useState(false);
 
-	useEffect(() => {
-		const groupedItems = items.reduce((results, item) => {
-			(results[item._id] = results[item._id] || []).push(item);
-			return results;
-		}, {} as { [key: string]: Product[] });
+	  useEffect(() => {
+    const groupedItems = items.reduce((results, item) => {
+      (results[item._id] = results[item._id] || []).push(item);
+      return results;
+    }, {} as { [key: string]: Product[] });
 
-		setGroupItemsInBasket(groupedItems);
-	}, [items]);
+    setGroupedItemsInBasket(groupedItems);
+  }, [items]);
 
 	const createCheckoutSession = async () => {
 		setLoading(true);
