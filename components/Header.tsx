@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/legacy/image";
-import Link from "next/Link";
+import Link from "next/link";
 import {
 	SearchIcon,
 	ShoppingBagIcon,
