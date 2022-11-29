@@ -15,7 +15,7 @@ export default function Checkout() {
 	const items = useSelector(selectBasketItems);
 	const basketTotal = useSelector(selectBasketTotal);
 	const router = useRouter();
-	const [groupedItemsInBasket, setGroupItemsInBasket] = useState(
+	const [groupedItemsInBasket, setGroupedItemsInBasket] = useState(
 		{} as { [key: string]: Product[] }
 	);
 	const [loading, setLoading] = useState(false);
