@@ -67,6 +67,7 @@ function Success({ products }: Props) {
           <Link href="/">
             <div className="relative ml-14 hidden h-24 w-12 cursor-pointer transition lg:inline-flex">
               <Image
+                alt="logo"
                 src="https://rb.gy/vsvv2o"
                 layout="fill"
                 objectFit="contain"
