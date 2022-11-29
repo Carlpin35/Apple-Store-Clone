@@ -10,7 +10,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import Currency from "react-currency-formatter";
 import { useMediaQuery } from "react-responsive";
 import Button from "../components/Button";
 import { fetchLineItems } from "../utils/fetchLineItems";
@@ -146,7 +145,7 @@ function Success({ products }: Props) {
                 </button>
 
                 <p className="text-xl font-medium text-black">
-                  <Currency quantity={100 + 20} />
+                 500$
                 </p>
               </div>
             </div>
@@ -173,10 +172,8 @@ function Success({ products }: Props) {
                       </div>
                       <p className="flex-1">{product.description}</p>
                       <p>
-                        <Currency
-                          quantity={product.price.unit_amount / 100}
-                          currency={product.currency}
-                        />
+                          {product.price.unit_amount / 100}
+                          
                       </p>
                     </div>
                   ))}
@@ -185,7 +182,7 @@ function Success({ products }: Props) {
                   <div className="flex justify-between text-sm">
                     <p className="text-[gray]">Subtotal</p>
                     <p className="font-medium">
-                      <Currency quantity={100} />
+                     {}
                     </p>
                   </div>
                   <div className="flex justify-between text-sm">
@@ -195,7 +192,7 @@ function Success({ products }: Props) {
                   <div className="flex justify-between text-sm">
                     <p className="text-[gray]">Shipping</p>
                     <p className="font-medium">
-                      <Currency quantity={20} currency="USD" />
+                     200$
                     </p>
                   </div>
                 </div>
@@ -204,7 +201,7 @@ function Success({ products }: Props) {
                   <p className="flex items-center gap-x-2 text-xs text-[gray]">
                     USD
                     <span className="text-xl font-medium text-black">
-                      <Currency quantity={100 + 20} />
+                   120$
                     </span>
                   </p>
                 </div>
