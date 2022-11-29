@@ -56,6 +56,7 @@ function Success({ products }: Props) {
               src="https://rb.gy/vsvv2o"
               layout="fill"
               objectFit="contain"
+              alt="logo"
             />
           </div>
         </Link>
