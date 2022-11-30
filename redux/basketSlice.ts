@@ -4,7 +4,7 @@ import type { RootState } from "./store";
 
 // Define a type for the slice state
 interface BasketState {
-  item: Product[];
+  items: Product[];
 }
 
 
